@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dark Futuristic Week 03 semantic structural frame for a video game curation portal.">
+  <title>Dark Futuristic | Week 03 Structural Frame</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Skip to game catalog</a>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Dark Futuristic milestone directory">
+      <span class="brand__mark" aria-hidden="true">DF</span>
+      <span>Dark Futuristic</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="#catalog" aria-current="page">Discover</a>
+      <a href="#filter-panel">Filters</a>
+      <a href="#project-status">Status</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-pressed="true">
+      <span aria-hidden="true">◐</span>
+      <span>Theme</span>
+    </button>
+  </header>
+
+  <section class="portal-frame" aria-label="Video game discovery portal layout">
+    <aside class="filter-rail" id="filter-panel" aria-labelledby="filter-title">
+      <header class="panel-heading">
+        <p class="zone-label">Aside // Filter Rail</p>
+        <h1 id="filter-title">Refine Catalog</h1>
+      </header>
+
+      <nav class="filter-nav" aria-label="Catalog filters">
+        <a href="#genre">Genre</a>
+        <a href="#platform">Platform</a>
+        <a href="#release">Release Era</a>
+        <a href="#rating">Rating</a>
+      </nav>
+
+      <footer class="filter-status">
+        <span>System</span>
+        <strong>Ready</strong>
+      </footer>
+    </aside>
+
+    <main class="catalog" id="catalog" tabindex="-1">
+      <header class="catalog-heading">
+        <section>
+          <p class="zone-label">Main // Catalog Hub</p>
+          <h2>Game Discovery Grid</h2>
+        </section>
+        <p class="layout-note">Structural wireframe — content arrives in a future milestone.</p>
+      </header>
+
+      <section class="catalog-grid" aria-label="Future catalog card positions">
+        <article aria-label="Featured game card position"><span>Featured</span></article>
+        <article aria-label="Game card position one"><span>Card 01</span></article>
+        <article aria-label="Game card position two"><span>Card 02</span></article>
+        <article aria-label="Game card position three"><span>Card 03</span></article>
+        <article aria-label="Game card position four"><span>Card 04</span></article>
+      </section>
+    </main>
+  </section>
+
+  <footer class="site-footer" id="project-status">
+    <p>Week 03 // Structural Frames &amp; Semantic Navigation</p>
+    <nav aria-label="Milestone navigation">
+      <a href="../week02/index.html">Week 02</a>
+      <a href="../index.html">All Milestones</a>
+    </nav>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.querySelector('.theme-toggle');
+
+    toggle.addEventListener('click', () => {
+      const isDark = root.dataset.theme === 'dark';
+      root.dataset.theme = isDark ? 'light' : 'dark';
+      toggle.setAttribute('aria-pressed', String(!isDark));
+    });
+  </script>
+</body>
+</html>
