@@ -2,20 +2,39 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dark Futuristic design system token blueprint for a video game discovery portal.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Dark Futuristic Week 02 design-system token blueprint."
+  >
+
   <title>Dark Futuristic | Week 02 Design Tokens</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
 
   <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="Dark Futuristic home">
+    <a class="brand" href="../index.html">
       <span class="brand__mark" aria-hidden="true">DF</span>
       <span>Dark Futuristic</span>
     </a>
-    <button class="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to light mode">
+
+    <button
+      class="theme-toggle"
+      type="button"
+      aria-pressed="true"
+      aria-label="Switch to light mode"
+    >
       <span aria-hidden="true">◐</span>
       <span class="theme-toggle__label">Dark mode</span>
     </button>
@@ -24,138 +43,252 @@
   <main id="main-content">
     <section class="hero" aria-labelledby="page-title">
       <div>
-        <p class="eyebrow">Week 02 // Global Token Blueprint</p>
-        <h1 id="page-title">Design system for a next-gen game discovery portal.</h1>
-        <p class="hero__summary">A reusable foundation of perceptual colors, fluid typography, and relative spacing—built for a responsive curation and discovery experience.</p>
+        <p class="eyebrow">
+          Week 02 // Global Token Blueprint
+        </p>
+
+        <h1 id="page-title">
+          Dark Futuristic Design System
+        </h1>
       </div>
-      <aside class="hero__status" aria-label="Project status">
+
+      <aside class="hero__status" aria-label="Project information">
         <span class="status-dot" aria-hidden="true"></span>
+
         <div>
-          <strong>System online</strong>
-          <span>Archetype C</span>
+          <strong>Archetype C</strong>
+          <span>Video Game Discovery Portal</span>
         </div>
       </aside>
     </section>
 
     <section class="token-section" aria-labelledby="color-title">
-      <div class="section-heading">
-        <p class="section-number">01</p>
+      <header class="section-heading">
+        <p class="section-number" aria-hidden="true">01</p>
+
         <div>
-          <h2 id="color-title">Perceptual color</h2>
-          <p>All core palette values use <code>oklch()</code> for predictable lightness and easier theme control.</p>
+          <h2 id="color-title">Perceptual Color</h2>
         </div>
-      </div>
+      </header>
 
       <div class="palette-grid">
-        <article class="color-card color-card--primary">
-          <span class="color-card__swatch"></span>
-          <div><strong>Primary / Volt Yellow</strong><code>oklch(90% 0.20 102)</code></div>
-        </article>
-        <article class="color-card color-card--secondary">
-          <span class="color-card__swatch"></span>
-          <div><strong>Secondary / Laser Cyan</strong><code>oklch(78% 0.16 208)</code></div>
-        </article>
-        <article class="color-card color-card--accent">
-          <span class="color-card__swatch"></span>
-          <div><strong>Accent / Neon Magenta</strong><code>oklch(66% 0.27 345)</code></div>
-        </article>
-        <article class="color-card color-card--surface">
-          <span class="color-card__swatch"></span>
-          <div><strong>Surface</strong><code>var(--color-surface)</code></div>
-        </article>
+        <div class="color-card color-card--primary">
+          <span
+            class="color-card__swatch"
+            aria-hidden="true"
+          ></span>
+
+          <div>
+            <strong>Primary</strong>
+            <code>oklch(90% 0.20 102)</code>
+          </div>
+        </div>
+
+        <div class="color-card color-card--secondary">
+          <span
+            class="color-card__swatch"
+            aria-hidden="true"
+          ></span>
+
+          <div>
+            <strong>Secondary</strong>
+            <code>oklch(78% 0.16 208)</code>
+          </div>
+        </div>
+
+        <div class="color-card color-card--accent">
+          <span
+            class="color-card__swatch"
+            aria-hidden="true"
+          ></span>
+
+          <div>
+            <strong>Accent</strong>
+            <code>oklch(66% 0.27 345)</code>
+          </div>
+        </div>
+
+        <div class="color-card color-card--surface">
+          <span
+            class="color-card__swatch"
+            aria-hidden="true"
+          ></span>
+
+          <div>
+            <strong>Surface</strong>
+            <code>var(--color-surface)</code>
+          </div>
+        </div>
       </div>
 
       <div class="contrast-grid">
         <article class="contrast-card contrast-card--light">
-          <p class="contrast-card__mode">Light mode</p>
-          <h3>Readable by design.</h3>
-          <p>Background and text contrast: approximately <strong>15.44:1</strong>.</p>
+          <p class="contrast-card__mode">Light Mode</p>
+
+          <h3>Background and Text</h3>
+
+          <p>
+            Contrast ratio:
+            <strong>15.44:1</strong>
+          </p>
         </article>
+
         <article class="contrast-card contrast-card--dark">
-          <p class="contrast-card__mode">Dark mode</p>
-          <h3>High contrast, low glare.</h3>
-          <p>Background and text contrast: approximately <strong>16.06:1</strong>.</p>
+          <p class="contrast-card__mode">Dark Mode</p>
+
+          <h3>Background and Text</h3>
+
+          <p>
+            Contrast ratio:
+            <strong>16.06:1</strong>
+          </p>
         </article>
       </div>
     </section>
 
     <section class="token-section" aria-labelledby="type-title">
-      <div class="section-heading">
-        <p class="section-number">02</p>
+      <header class="section-heading">
+        <p class="section-number" aria-hidden="true">02</p>
+
         <div>
-          <h2 id="type-title">Fluid typography</h2>
-          <p>The scale combines <code>rem</code> and <code>vw</code>, so headings respond to viewport width while still growing with browser zoom.</p>
+          <h2 id="type-title">Fluid Typography</h2>
         </div>
-      </div>
+      </header>
 
       <div class="type-specimens">
-        <article class="type-row">
-          <div><span>Heading Large</span><code>--size-heading-lg</code></div>
-          <p class="type-lg">Discover your next obsession.</p>
-        </article>
-        <article class="type-row">
-          <div><span>Heading Medium</span><code>--size-heading-md</code></div>
-          <p class="type-md">Curated worlds. Zero noise.</p>
-        </article>
-        <article class="type-row">
-          <div><span>Base</span><code>--size-base</code></div>
-          <p class="type-base">Browse new releases, hidden gems, and genre-defining classics through one focused interface.</p>
-        </article>
+        <div class="type-row">
+          <div>
+            <span>Heading Large</span>
+            <code>--size-heading-lg</code>
+          </div>
+
+          <p class="type-lg">
+            Discover Your Next Game
+          </p>
+        </div>
+
+        <div class="type-row">
+          <div>
+            <span>Heading Medium</span>
+            <code>--size-heading-md</code>
+          </div>
+
+          <p class="type-md">
+            Curated Game Collections
+          </p>
+        </div>
+
+        <div class="type-row">
+          <div>
+            <span>Base</span>
+            <code>--size-base</code>
+          </div>
+
+          <p class="type-base">
+            Browse games by genre, platform, and rating.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="token-section" aria-labelledby="spacing-title">
-      <div class="section-heading">
-        <p class="section-number">03</p>
+      <header class="section-heading">
+        <p class="section-number" aria-hidden="true">03</p>
+
         <div>
-          <h2 id="spacing-title">Spacing constants</h2>
-          <p>A rem-based spacing scale keeps rhythm consistent and respects user font-size settings.</p>
+          <h2 id="spacing-title">Spacing Constants</h2>
         </div>
-      </div>
+      </header>
 
       <div class="spacing-list">
-        <div class="spacing-item"><code>--space-xs</code><span class="space-bar space-bar--xs"></span><strong>0.5rem</strong></div>
-        <div class="spacing-item"><code>--space-sm</code><span class="space-bar space-bar--sm"></span><strong>0.75rem</strong></div>
-        <div class="spacing-item"><code>--space-md</code><span class="space-bar space-bar--md"></span><strong>1rem</strong></div>
-        <div class="spacing-item"><code>--space-lg</code><span class="space-bar space-bar--lg"></span><strong>1.5rem</strong></div>
-        <div class="spacing-item"><code>--space-xl</code><span class="space-bar space-bar--xl"></span><strong>2rem</strong></div>
-        <div class="spacing-item"><code>--space-2xl</code><span class="space-bar space-bar--2xl"></span><strong>3rem</strong></div>
-      </div>
-    </section>
-
-    <section class="token-section blueprint" aria-labelledby="blueprint-title">
-      <div class="section-heading">
-        <p class="section-number">04</p>
-        <div>
-          <h2 id="blueprint-title">Portal blueprint</h2>
-          <p>These tokens will support the future filter sidebar, search header, responsive game-card gallery, and comparison widgets.</p>
+        <div class="spacing-item">
+          <code>--space-xs</code>
+          <span
+            class="space-bar space-bar--xs"
+            aria-hidden="true"
+          ></span>
+          <strong>0.5rem</strong>
         </div>
-      </div>
-      <div class="blueprint-grid" aria-label="Future interface components">
-        <div>Filter sidebar</div>
-        <div>Search header</div>
-        <div>Game-card gallery</div>
-        <div>Comparison widgets</div>
+
+        <div class="spacing-item">
+          <code>--space-sm</code>
+          <span
+            class="space-bar space-bar--sm"
+            aria-hidden="true"
+          ></span>
+          <strong>0.75rem</strong>
+        </div>
+
+        <div class="spacing-item">
+          <code>--space-md</code>
+          <span
+            class="space-bar space-bar--md"
+            aria-hidden="true"
+          ></span>
+          <strong>1rem</strong>
+        </div>
+
+        <div class="spacing-item">
+          <code>--space-lg</code>
+          <span
+            class="space-bar space-bar--lg"
+            aria-hidden="true"
+          ></span>
+          <strong>1.5rem</strong>
+        </div>
+
+        <div class="spacing-item">
+          <code>--space-xl</code>
+          <span
+            class="space-bar space-bar--xl"
+            aria-hidden="true"
+          ></span>
+          <strong>2rem</strong>
+        </div>
+
+        <div class="spacing-item">
+          <code>--space-2xl</code>
+          <span
+            class="space-bar space-bar--2xl"
+            aria-hidden="true"
+          ></span>
+          <strong>3rem</strong>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Dark Futuristic // Capstone Week 02</p>
-    <a href="../index.html">Milestone directory</a>
+    <p>Dark Futuristic // Week 02</p>
+
+    <a href="../index.html">
+      Milestone Directory
+    </a>
   </footer>
 
   <script>
     const root = document.documentElement;
-    const toggle = document.querySelector('.theme-toggle');
-    const label = document.querySelector('.theme-toggle__label');
+    const toggle = document.querySelector(".theme-toggle");
+    const label = document.querySelector(".theme-toggle__label");
 
-    toggle.addEventListener('click', () => {
-      const isDark = root.dataset.theme === 'dark';
-      root.dataset.theme = isDark ? 'light' : 'dark';
-      toggle.setAttribute('aria-pressed', String(!isDark));
-      toggle.setAttribute('aria-label', `Switch to ${isDark ? 'dark' : 'light'} mode`);
-      label.textContent = isDark ? 'Light mode' : 'Dark mode';
+    toggle.addEventListener("click", () => {
+      const isDark = root.dataset.theme === "dark";
+      const nextTheme = isDark ? "light" : "dark";
+
+      root.dataset.theme = nextTheme;
+
+      toggle.setAttribute(
+        "aria-pressed",
+        String(nextTheme === "dark")
+      );
+
+      toggle.setAttribute(
+        "aria-label",
+        `Switch to ${nextTheme === "dark" ? "light" : "dark"} mode`
+      );
+
+      label.textContent =
+        nextTheme === "dark" ? "Dark mode" : "Light mode";
     });
   </script>
 </body>
